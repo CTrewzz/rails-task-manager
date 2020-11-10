@@ -1,0 +1,13 @@
+<h1>ABVGD</h1>
+
+<p>
+  <%= link_to "Update #{@task.title}", edit_task_path(@task)  %>
+</p>
+
+<p>
+  <%= link_to "Remove #{@task.title}",
+                      task_path(@task),
+                      method: :delete,
+                      data: { confirm: "For real?"} %>
+</p>
+<%= link_to "back home",  tasks_path%>
